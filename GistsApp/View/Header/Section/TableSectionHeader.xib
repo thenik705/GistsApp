@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AWh-Cf-IUz" customClass="TableSectionHeader" customModule="GistsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtd-IN-AFZ">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="61"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFq-oc-SbF">
+                            <rect key="frame" x="20" y="5" width="93.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc2-nc-NrW">
+                            <rect key="frame" x="20" y="34" width="350" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="zvp-sJ-bVV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A97-pH-F3q">
+                            <rect key="frame" x="133.5" y="2.5" width="236.5" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="1qf-m3-UQf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="См. все">
+                                <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedAllButtonAction:" destination="-2" eventType="touchUpInside" id="AF8-17-yjq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Hc2-nc-NrW" secondAttribute="trailing" constant="20" id="MsW-yR-ftJ"/>
+                        <constraint firstAttribute="trailing" secondItem="A97-pH-F3q" secondAttribute="trailing" constant="20" id="SI0-wN-Sp3"/>
+                        <constraint firstItem="Hc2-nc-NrW" firstAttribute="leading" secondItem="jtd-IN-AFZ" secondAttribute="leading" constant="20" id="WYA-Qg-0qW"/>
+                        <constraint firstItem="A97-pH-F3q" firstAttribute="centerY" secondItem="oFq-oc-SbF" secondAttribute="centerY" id="bue-vI-oZO"/>
+                        <constraint firstItem="Hc2-nc-NrW" firstAttribute="top" secondItem="oFq-oc-SbF" secondAttribute="bottom" constant="5" id="jvw-Iz-Lop"/>
+                        <constraint firstItem="A97-pH-F3q" firstAttribute="leading" secondItem="oFq-oc-SbF" secondAttribute="trailing" constant="20" id="nZe-EE-A30"/>
+                        <constraint firstItem="oFq-oc-SbF" firstAttribute="top" secondItem="jtd-IN-AFZ" secondAttribute="top" constant="5" id="ogn-j3-4aE"/>
+                        <constraint firstItem="oFq-oc-SbF" firstAttribute="leading" secondItem="jtd-IN-AFZ" secondAttribute="leading" constant="20" id="wQW-Fs-0I9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jtd-IN-AFZ" firstAttribute="top" secondItem="AWh-Cf-IUz" secondAttribute="top" id="PyX-6Q-Zsm"/>
+                <constraint firstItem="jtd-IN-AFZ" firstAttribute="leading" secondItem="AWh-Cf-IUz" secondAttribute="leading" id="ZZF-5w-GmD"/>
+                <constraint firstItem="jtd-IN-AFZ" firstAttribute="trailing" secondItem="ETM-Bb-GqZ" secondAttribute="trailing" id="b8B-hd-21R"/>
+                <constraint firstAttribute="bottom" secondItem="jtd-IN-AFZ" secondAttribute="bottom" id="nuI-De-chP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ETM-Bb-GqZ"/>
+            <connections>
+                <outlet property="allButton" destination="A97-pH-F3q" id="QC2-Hf-go9"/>
+                <outlet property="background" destination="jtd-IN-AFZ" id="kE4-SQ-5fF"/>
+                <outlet property="subTitle" destination="Hc2-nc-NrW" id="zEh-wA-x2u"/>
+                <outlet property="subTitleHeight" destination="zvp-sJ-bVV" id="J2a-fc-9cl"/>
+                <outlet property="title" destination="oFq-oc-SbF" id="yOd-Ow-p6d"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="106"/>
+        </view>
+    </objects>
+</document>
